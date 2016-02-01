@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Stay Safe!</title>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+				<link rel="stylesheet" type="text/css" href="style.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<div class="container">
+			<div class="logo">
+				<img src="StaySafeLogo.jpg" alt="StaySafeLogo" style="width:174px; height:199px;">
+			</div>
+						<nav class="navbar navbar-inverse">
+						  <div class="container-fluid">
+						    <div class="navbar-header">
+						      <a class="navbar-brand" href="#">WebSiteName</a>
+						    </div>
+						    <ul class="nav navbar-nav">
+						      <li class="active"><a href="#">Home</a></li>
+						      <li class="dropdown">
+						        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
+						        <span class="caret"></span></a>
+						        <ul class="dropdown-menu">
+								<a href="index.html">CPR</a></li><li>
+								<a href="index.html">Allergic Reaction</a></li><li>
+								<a href="index.html">Brund and Scalds</a></li><li>
+								<a href="index.html">Bleeding</a></li><li>
+								<a href="index.html">Choking</a></li><li>
+								<a href="index.html">Heart Attack</a></li><li>
+								<a href="index.html">Quiz</a></li>
+						        </ul>
+						      </li>
+						      <li><a href="#">Page 2</a></li> 
+						      <li><a href="#">Page 3</a></li> 
+						    </ul>
+						  </div>
+						</nav>
+			<nav>
+				<div class="nav_wrapper">
+					<ul>
+					<!-- </li><li> gets rid of the space between links -->
+						<li><a href="index.html">Home</a></li><li>
+						<a href="index.html">First Aid</a>
+							<ul>
+								<li><a href="index.html">First Aid</a></li><li>
+								<a href="index.html">CPR</a></li><li>
+								<a href="index.html">Allergic Reaction</a></li><li>
+								<a href="index.html">Brund and Scalds</a></li><li>
+								<a href="index.html">Bleeding</a></li><li>
+								<a href="index.html">Choking</a></li><li>
+								<a href="index.html">Heart Attack</a></li><li>
+								<a href="index.html">Quiz</a></li>
+							</ul>
+						</li><li>
+						<a href="index.html">Fire Safety</a>
+							<ul>
+								<li><a href="index.html">Topic 1</a></li><li>
+								<a href="index.html">Topic 2</a></li>
+							</ul>
+						</li><li>
+						<a href="index.html">Hygiene</a>
+							<ul>
+								<li><a href="index.html">Topic 1</a></li><li>
+								<a href="index.html">Topic 2</a></li>
+							</ul>
+						</li><li>
+						<a href="index.html">Food Hygiene</a>
+							<ul>
+								<li><a href="index.html">Topic 1</a></li><li>
+								<a href="index.html">Topic 2</a></li>
+							</ul>
+						</li><li>
+						<a href="index.html">About Us</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="overview">
+				<p>This website was created to teach and provide information to teenagers and adults in order to minimize the chance of getting ill. The website consists of quizzes at the end of each “course” which leads to the completion of a chosen area of study.</p>
+			</div>
+			<div class="firstAid">
+				<p>first aid</p>
+			</div>
+			<div class="fireSafety">
+				<p>fireSafety</p>
+			</div>
+			<div style="clear:both"></div>
+			<div class="hygiene">
+				<p>hygiene</p>
+			</div>
+			<div class="foodHygiene">
+				<p>foodHygiene</p>
+			</div> 
+			<div style="clear:both"></div>
+			<div class="footer">
+				<p>All copy rights protected by Southampton Solent Univeristy &copy</p>
+			</div>
+		</div>
+	</body>
+</html>
