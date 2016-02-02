@@ -44,3 +44,9 @@ footer
     height: 150px;*/
     background: rgba(255,255,255,0.5);
 }
+.block{
+background: #9ad3de;
+display:inline-block;
+padding: 10px;
+}
+}
