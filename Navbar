@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Stay Safe!</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script src="bootstrap.js"></script>
+		<script src="jquery.js"></script>
+	</head>
+	<body>
+		<!-- nav bar (drop down menu) -->
+		<nav class="navbar navbar-default" role="navigation"> <!-- navbar-fixed-top -->
+			<div class="container">
+			<a href="#" class="logo hidden-xs"><img src="logo1.png" class="img-responsive" /></a>
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand visible-xs-inline">Stay Safe</a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">Home</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">First Aid</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">CPR</a></li>
+								<li><a href="#">Allergic</a></li>
+								<li><a href="#">Brunds and Scalds</a></li>
+								<li><a href="#">Bleeding</a></li>
+								<li><a href="#">Choking</a></li>
+								<li><a href="#">Hear Attack</a></li>
+								<li><a href="#">Quiz</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Fire Safety</a></li>
+						<li><a href="#">Hygiene</a></li>
+						<li><a href="#">Food Hygiene</a></li>
+						<li><a href="#">About Us</a></li>
+					</ul>
+				</div>
+			</div>
+			  <div class="push"></div>
+ </div>
+		</nav>
+		<script src="bootstrap.js"></script>
+		<script src="jquery.js"></script>
+		<footer class="navbar-bottom row-fluid">
+			<p>Copyright &copy 2016 by Southampton Solent Univeristy</p>
+		</footer>
+	</body>
+</html>
