@@ -1,0 +1,46 @@
+body 
+{
+	background-color: white;
+	min-height: 1800px;
+}
+.navbar
+{
+	font-size: 25px;
+	float: bottom;
+	background: rgba(255,255,255,0.5);
+	border: none;
+
+}
+.navbar-default .navbar-text {
+  color: #000000;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #000000;
+}
+.logo img{
+width: 151px;
+height: 144px;
+/*height: 100%;*/
+display: inline-block;
+}
+.logo img:hover
+{
+	opacity: 0.8;
+}
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+footer
+{
+/*	position: absolute; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 150px;*/
+    background: rgba(255,255,255,0.5);
+}
