@@ -26,7 +26,6 @@ body
 .logo img{
 width: 151px;
 height: 144px;
-/*height: 100%;*/
 display: inline-block;
 }
 .logo img:hover
@@ -46,16 +45,6 @@ footer{
     text-align: center;
     background-color: #9ad3de;
 }
-/*footer
-{
-	position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 150px;
-    background: #9ad3de;
-}*/
-
 a.tilelink{
     background-color: #9ad3de;
     color:#000000;
@@ -67,4 +56,8 @@ a.tilelink:hover
 {
     background-color: #89bdd3;
     opacity: 0.8
+}
+.col-sm-6
+{
+    padding: 10px;
 }
