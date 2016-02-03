@@ -1,70 +1,32 @@
-body 
-{
-	background-color: #e3e3e3;
+body{
+    background-image:url("images/pattern.jpg");
+}
+a.thumbnail{
+    border-color: transparent;
+    border-width: 12px;
+    background-color: #89bdd3;
 
-}
-.container {
-    background-color: #89bdd3 ;
-}
-.nav{
-    background-color: #c9c9c9;
-}
-.navbar
-{
-	font-size: 25px;
-	float: bottom;
-	background: #9ad3de;
-	border: none;
-
-}
-.navbar-default .navbar-text {
-  color: #000000;
-}
-.navbar-default .navbar-nav > li > a {
-  color: #000000;
-}
-.logo img{
-width: 151px;
-height: 144px;
-/*height: 100%;*/
-display: inline-block;
-}
-.logo img:hover
-{
-	opacity: 0.8;
-}
-.navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-}
-
-.navbar .navbar-collapse {
-    text-align: center;
-}
-footer{
-    padding: 20px;
-    text-align: center;
-    background-color: #9ad3de;
-}
-/*footer
-{
-	position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 150px;
-    background: #9ad3de;
-}*/
-
-a.tilelink{
-    background-color: #9ad3de;
     color:#000000;
     text-decoration: none;
     display: inline-block;
     margin: 20px;
 }
-a.tilelink:hover
+a.thumbnail:hover
 {
-    background-color: #89bdd3;
+    border-style: solid;
+    border-width: 12px;
+    background-color: #9ad3de;
     opacity: 0.8
+}
+#firstAidTile:hover{
+    border-color: greenyellow;
+}
+#fireSafetyTile:hover{
+    border-color: red;
+}
+#hygieneTile:hover{
+    border-color: deepskyblue;
+}
+#foodHygieneTile:hover{
+    border-color: orange;
 }
