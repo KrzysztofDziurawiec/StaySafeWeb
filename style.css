@@ -1,7 +1,8 @@
 
 body {
-    background-image: url("images/pattern.jpg");
-
+    background-image: url("images/greeenWallpeper.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 .logo img{
