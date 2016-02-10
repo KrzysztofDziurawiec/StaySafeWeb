@@ -5,11 +5,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.logo img{
-width: 151px;
-height: 144px;
-display: inline-block;
-}
+
 .logo img:hover
 {
 	opacity: 0.8;
