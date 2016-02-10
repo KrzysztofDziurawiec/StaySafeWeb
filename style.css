@@ -1,32 +1,9 @@
-<<<<<<< HEAD
-body{
-    background-image:url("images/pattern.jpg");
-=======
-body
-{
-	background-color: #e3e3e3;
+
+body {
+    background-image: url("images/pattern.jpg");
 
 }
-.container {
-    background-color: #89bdd3 ;
-}
-.nav{
-    background-color: #c9c9c9;
-}
-.navbar
-{
-	font-size: 25px;
-	float: bottom;
-	background: #9ad3de;
-	border: none;
 
-}
-.navbar-default .navbar-text {
-  color: #000000;
-}
-.navbar-default .navbar-nav > li > a {
-  color: #000000;
-}
 .logo img{
 width: 151px;
 height: 144px;
@@ -36,29 +13,18 @@ display: inline-block;
 {
 	opacity: 0.8;
 }
-.navbar .navbar-nav {
-    display: inline-block;
-    float: none;
->>>>>>> 2bb70fb26e9a42a5f3c1debdeafbacf7607a1fbb
-}
-a.thumbnail{
+
+a.thumbnail {
     border-color: transparent;
     border-width: 12px;
     background-color: #89bdd3;
-
-<<<<<<< HEAD
-=======
+}
 .navbar .navbar-collapse {
     text-align: center;
 }
-footer{
-    padding: 20px;
-    text-align: center;
-    background-color: #9ad3de;
-}
+
 a.tilelink{
     background-color: #9ad3de;
->>>>>>> 2bb70fb26e9a42a5f3c1debdeafbacf7607a1fbb
     color:#000000;
     text-decoration: none;
     display: inline-block;
@@ -69,9 +35,9 @@ a.thumbnail:hover
     border-style: solid;
     border-width: 12px;
     background-color: #9ad3de;
+    text-decoration: none;
     opacity: 0.8
 }
-<<<<<<< HEAD
 #firstAidTile:hover{
     border-color: greenyellow;
 }
@@ -81,11 +47,10 @@ a.thumbnail:hover
 #hygieneTile:hover{
     border-color: deepskyblue;
 }
-#foodHygieneTile:hover{
+#foodHygieneTile:hover {
     border-color: orange;
-=======
-.col-sm-6
-{
-    padding: 10px;
->>>>>>> 2bb70fb26e9a42a5f3c1debdeafbacf7607a1fbb
 }
+#accordion{
+    background: greenyellow;
+}
+
