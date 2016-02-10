@@ -50,4 +50,9 @@ a.thumbnail:hover
 #accordion{
     background: greenyellow;
 }
-
+li {
+    list-style: none;
+}
+.dropdown:hover .dropdown-menu {
+display: block;
+}

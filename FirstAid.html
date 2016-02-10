@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="quiz.js"></script>
+    <script src="jquery.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css"/>
 
 </head>
@@ -28,9 +30,9 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">First Aid <span class="caret"></span></a>
+                <li ><a href="index.html">Home</a></li>
+                <li class="dropdown active">
+                    <a href="firstAid.html" class="dropdown-toggle" data-toggle="dropdown">First Aid <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">CPR</a></li>
                         <li><a href="#">Allergic</a></li>
@@ -199,102 +201,115 @@
                 </div>
                 <div id="collapseSeven" class="panel-collapse collapse">
                     <div class="panel-body">
-                        <p>1. How many percent (%) of people do not feel confident to provide first aid?<br><br>
-                            -12%<br>
-                            -34%<br>
-                            -59% - correct<br>
-                            -71%<br>
-                        </p>
-                        <p>2. What percentage (%) of people would do nothing and wait for an ambulance to arrive?<br><br>
-                            -10%<br>
-                            -28%<br>
-                            -42%<br>
-                            -24% - correct<br>
-                        </p>
-                        <p>3. How many live can be saved each year by knowing how to provide first aid?<br><br>
-                            -1200<br>
-                            -2000<br>
-                            -4200<br>
-                            -2500 – correct<br>
-                        </p>
-                        <p>4. What amount of chest compressions would be advisable while doing CPR (per minute)<br><br>
-                            -93 - 108<br>
-                            -25 - 45<br>
-                            -100 – 120 - correct<br>
-                            -50 – 80<br>
-                        </p>
-                        <p>5. When to use CPR?<br><br>
-                            -If someone is bleeding<br>
-                            -If someone is not breathing properly - correct<br>
-                            -If someone has a fracture<br>
-                            -Once or twice a week<br>
-                        </p>
-                        <p>6. How allergic reaction can be caused?<br><br>
-                            -By having a stroke<br>
-                            -By not eating certain foods<br>
-                            -By sting of an insect – correct<br>
-                            -All of the above<br>
-                        </p>
-                        <p>7 What to do in an event of burn?<br><br>
-                            -Try to pour warm water over the burn<br>
-                            -Cool the burn with cold running water – correct<br>
-                            -Put creams, lotions or sprays over the burn<br>
-                            -Wrap the burn location<br>
-                        </p>
-                        <p>8. What is the main aim when someone is bleeding?<br><br>
-                            -To make him/her comfortable<br>
-                            -Allow the wound to bleed until it stops<br>
-                            -Prevent the loss of blood - correct<br>
-                            -None of the above<br>
-                        </p>
-                        <p>9. What to do if something is embedded in the wound?<br><br>
-                            -Try to get it out<br>
-                            -Do not touch it<br>
-                            -bandage the wound firmly but prevent putting pressure on the object - correct<br>
-                            -Provide CPR<br>
-                        </p>
-                        <p>10. What to do if something is not embedded in the wound?<br><br>
-                            -Apply an maintain pressure to the wound<br>
-                            -Use clean dressing to bandage the wound<br>
-                            -Raise the limb to decrease flow of blood (if the limb is not fractured)<br>
-                            -All of the above – correct<br>
-                        </p>
-                        <p>11. If the airway is partly blocked you should:<br><br>
-                            -Try to put an object or fingers into the person’s throat<br>
-                            -Wait until it unblocks itself<br>
-                            -Do nothing<br>
-                            -Encourage the person to cough to try to clear the airway – correct<br>
-                        </p>
-                        <p>12. If someone is having a heart attack you should:<br><br>
-                            -Try to do CPR immediately<br>
-                            -Try to give them 300 mg paracetamol tablet<br>
-                            -Try to give them 300 mg aspirin tablet – correct<br>
-                            -Do not call an ambulance<br>
-                        </p>
-                        <p>13.If someone is having or has had a stroke you should follow:<br><br>
-                            -S.L.O.W guide<br>
-                            -F.A.S.T guide - correct<br>
-                            -H.E.L.P guide<br>
-                            -All of the above<br>
-                        </p>
-
-
-
-
+                        <main>
+                            <form class="questionForm" id="q1" data-question="1">
+                                <p>1. How many percent (%) of people do not feel confident to provide first aid?</p>
+                                <ul>
+                                    <li><input type="radio" name="q1" value="a"/>12%</li>
+                                    <li><input type="radio" name="q1" value="b"/>34%</li>
+                                    <li><input type="radio" name="q1" value="c"/>59%</li>
+                                    <li><input type="radio" name="q1" value="d"/>71%</li>
+                                </ul>
+                                <button id="submit">Submit</button>
+                            </form>
+                            <form class="questionForm" id="q2" data-question="2">
+                                <p>2. What percentage (%) of people would do nothing and wait for an ambulance to arrive?</p>
+                                <ul>
+                                    <li><input type="radio" name="q2" value="a"/>10%</li>
+                                    <li><input type="radio" name="q2" value="b"/>28%</li>
+                                    <li><input type="radio" name="q2" value="c"/>42%</li>
+                                    <li><input type="radio" name="q2" value="d"/>24%</li>
+                                </ul>
+                                <button id="submit">Submit</button>
+                            </form>
+                            <form class="questionForm" id="q3" data-question="3">
+                                <p>3. How many live can be saved each year by knowing how to provide first aid?</p>
+                                <ul>
+                                    <li><input type="radio" name="q3" value="a"/>1200</li>
+                                    <li><input type="radio" name="q3" value="b"/>2000</li>
+                                    <li><input type="radio" name="q3" value="c"/>4200</li>
+                                    <li><input type="radio" name="q3" value="d"/>2500</li>
+                                </ul>
+                                <button id="submit">Submit</button>
+                            </form>
+                            <form class="questionForm" id="q4" data-question="4">
+                                <p>4. What amount of chest compressions would be advisable while doing CPR (per minute)</p>
+                                <ul>
+                                    <li><input type="radio" name="q4" value="a"/>93 - 108</li>
+                                    <li><input type="radio" name="q4" value="b"/>25 - 45</li>
+                                    <li><input type="radio" name="q4" value="c"/>100 – 120</li>
+                                    <li><input type="radio" name="q4" value="d"/>50 – 80</li>
+                                </ul>
+                                <button id="submit">Submit</button>
+                            </form>
+                            <form class="questionForm" id="q5" data-question="5">
+                                <p>5. When to use CPR?</p>
+                                <ul>
+                                    <li><input type="radio" name="q5" value="a"/>If someone is bleeding</li>
+                                    <li><input type="radio" name="q5" value="b"/>If someone is not breathing properly - correct</li>
+                                    <li><input type="radio" name="q5" value="c"/>If someone has a fracture</li>
+                                    <li><input type="radio" name="q5" value="d"/>Once or twice a week</li>
+                                </ul>
+                                <button id="submit">Submit</button>
+                            </form>
+                            <form class="questionForm" id="q6" data-question="6">
+                                <p>6. How allergic reaction can be caused?</p>
+                                <ul>
+                                    <li><input type="radio" name="q6" value="a"/>By having a stroke</li>
+                                    <li><input type="radio" name="q6" value="b"/>By not eating certain foods</li>
+                                    <li><input type="radio" name="q6" value="c"/>By sting of an insect</li>
+                                    <li><input type="radio" name="q6" value="d"/>Wrap the burn location</li>
+                                </ul>
+                                <button id="submit">Submit</button>
+                            </form>
+                            <form class="questionForm" id="q7" data-question="7">
+                                <p>7. What to do in an event of burn?</p>
+                                <ul>
+                                    <li><input type="radio" name="q7" value="a"/>Try to pour warm water over the burn</li>
+                                    <li><input type="radio" name="q7" value="b"/>Cool the burn with cold running water</li>
+                                    <li><input type="radio" name="q7" value="c"/>Put creams, lotions or sprays over the burn</li>
+                                    <li><input type="radio" name="q7" value="d"/>Wrap the burn location</li>
+                                </ul>
+                                <button id="submit">Submit</button>
+                            </form>
+                            <form class="questionForm" id="q8" data-question="8">
+                                <p>8. What is the main aim when someone is bleeding?</p>
+                                <ul>
+                                    <li><input type="radio" name="q8" value="a"/>To make him/her comfortable</li>
+                                    <li><input type="radio" name="q8" value="b"/>Allow the wound to bleed until it stops</li>
+                                    <li><input type="radio" name="q8" value="c"/>Prevent the loss of blood  correct</li>
+                                    <li><input type="radio" name="q8" value="d"/>None of the above</li>
+                                </ul>
+                                <button id="submit">Submit</button>
+                            </form>
+                            <form class="questionForm" id="q9" data-question="9">
+                                <p>9. What to do if something is embedded in the wound?</p>
+                                <ul>
+                                    <li><input type="radio" name="q9" value="a"/>Try to get it out</li>
+                                    <li><input type="radio" name="q9" value="b"/>Do not touch it</li>
+                                    <li><input type="radio" name="q9" value="c"/>Bandage the wound firmly but prevent putting pressure on the object</li>
+                                    <li><input type="radio" name="q9" value="d"/>Provide CPR</li>
+                                </ul>
+                                <button id="submit">Submit</button>
+                            </form>
+                            <form class="questionForm" id="q10" data-question="10">
+                                <p>10. What to do if something is not embedded in the wound?</p>
+                                <ul>
+                                    <li><input type="radio" name="q10" value="a"/>Apply an maintain pressure to the wound</li>
+                                    <li><input type="radio" name="q10" value="b"/>Use clean dressing to bandage the wound</li>
+                                    <li><input type="radio" name="q10" value="c"/> Raise the limb to decrease flow of blood (if the limb is not fractured)</li>
+                                    <li><input type="radio" name="q10" value="d"/>All of the above</li>
+                                </ul>
+                                <button id="submit">Submit</button>
+                            </form>
+                            <div id="results"></div>
+                        </main>
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
-
-    <style>
-        .panel-body
-        {
-            border: 2px solid white;
-            /* background-color: gray; */
-        }
-    </style>
-
     <div class="well well-sm">
         <footer class="navbar-bottom row-fluid"style="text-align: center;padding: 20px">
             <p>Created by Software Engineering students at Southampton Solent University Copyright &copy 2016 </p>
