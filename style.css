@@ -1,11 +1,14 @@
 
 body {
-    background-image: url("images/greeenWallpeper.jpg");
+    background-image: url("images/stoneWallpeper.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
-
+.jumbotron{
+	min-height: 250px;
+}
 .logo img:hover
 {
 	opacity: 0.8;
@@ -27,6 +30,9 @@ a.tilelink{
     display: inline-block;
     margin: 20px;
 }
+.thumbnail{
+	min-height: 190px;
+}
 a.thumbnail:hover
 {
     border-style: solid;
@@ -38,6 +44,7 @@ a.thumbnail:hover
 #firstAidTile:hover{
     border-color: greenyellow;
 }
+
 #fireSafetyTile:hover{
     border-color: red;
 }
@@ -47,8 +54,11 @@ a.thumbnail:hover
 #foodHygieneTile:hover {
     border-color: orange;
 }
-#accordion{
+#accordionFirstAid{
     background: greenyellow;
+}
+#accordionFireSafety{
+    background: red;
 }
 li {
     list-style: none;
