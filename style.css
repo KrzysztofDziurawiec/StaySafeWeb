@@ -1,6 +1,6 @@
 
 body {
-    background-image: url("images/stoneWallpeper.jpg");
+    background-image: url("images/watterWallpeper.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -60,9 +60,15 @@ a.thumbnail:hover
 #accordionFireSafety{
     background: red;
 }
+#accordionHygiene{
+	background:deepskyblue;
+}
 li {
     list-style: none;
 }
 .dropdown:hover .dropdown-menu {
 display: block;
+}
+#address{
+	color: white;
 }
