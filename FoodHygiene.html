@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="quiz.js"></script>
+    <script src="jquery.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css"/>
 
 </head>
@@ -26,34 +28,64 @@
             </button>
             <a href="#" class="navbar-brand visible-xs-inline">Stay Safe</a>
         </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="FirstAid.html" class="dropdown-toggle" data-toggle="dropdown">First Aid <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">CPR</a></li>
-                        <li><a href="#">Allergic</a></li>
-                        <li><a href="#">Brunds and Scalds</a></li>
-                        <li><a href="#">Bleeding</a></li>
-                        <li><a href="#">Choking</a></li>
-                        <li><a href="#">Hear Attack</a></li>
-                        <li><a href="#">Quiz</a></li>
-                    </ul>
-                </li>
-                <li><a href="FireSafety.html">Fire Safety</a></li>
-                <li><a href="Hygiene.html">Hygiene</a></li>
-                <li><a href="FoodHygiene.html">Food Hygiene</a></li>
-                <li><a href="AboutUs.html">About Us</a></li>
-            </ul>
-        </div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li class="dropdown">
+						<a href="FirstAid.html" class="dropdown-toggle" data-toggle="dropdown">First Aid <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+	                        <li><a href="FirstAid.html#overview">Overview</a></li>
+	                        <li><a href="FirstAid.html#cpr">CPR</a></li>
+	                        <li><a href="FirstAid.html#allergic">Allergic</a></li>
+	                        <li><a href="FirstAid.html#burns">Burns and Scalds</a></li>
+	                        <li><a href="FirstAid.html#bleeding">Bleeding</a></li>
+	                        <li><a href="FirstAid.html#choking">Choking</a></li>
+	                        <li><a href="FirstAid.html#heart">Heart Attack</a></li>
+	                        <li><a href="FirstAid.html#quiz">Quiz</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a href="FireSafety.html"  class="dropdown-toggle" data-toggle="dropdown">Fire Safety <span class="caret"></span></a>
+                		<ul class="dropdown-menu">
+	                        <li><a href="FireSafety.html#overview">Overview</a></li>
+	                        <li><a href="FireSafety.html#fire">Fire Prevention</a></li>
+	                        <li><a href="FireSafety.html#limitingfire">Limiting the development of fire</a></li>
+	                        <li><a href="FireSafety.html#firetypes">Different types of fires </a></li>
+	                        <li><a href="FireSafety.html#extinguisher">How to use fire extinguisher</a></li>
+	                        <li><a href="FireSafety.html#quiz">Quiz</a></li>
+                   		</ul>
+                	</li>
+					<li class="dropdown">
+                		<a href="Hygiene.html" class="dropdown-toggle" data-toggle="dropdown">Hygiene<span class="caret"></span></a>
+                   		<ul class="dropdown-menu">
+	                        <li><a href="Hygiene.html#overview">Overview</a></li>
+	                        <li><a href="Hygiene.html#gPractices">General Practices</a></li>
+	                        <li><a href="Hygiene.html#hair">Hygiene Practices - Hair</a></li>
+	                        <li><a href="Hygiene.html#teeth">Hygiene Practices - Teeth</a></li>
+	                        <li><a href="Hygiene.html#ears">Hygiene Practices - Ears</a></li>
+	                        <li><a href="Hygiene.html#hands">Hygiene Practices - Hands</a></li>
+	                        <li><a href="Hygiene.html#feet">Hygiene Practices - Feet</a></li>
+	                        <li><a href="Hygiene.html#quiz">Quiz</a></li>
+                    	</ul>
+            		</li>
+					<li class="dropdown active">
+                		<a href="FoodHygiene.html" class="dropdown-toggle"  data-toggle="dropdown">Food Hygiene<span class="caret"></span></a>
+                   		<ul class="dropdown-menu">
+	                        <li><a href="FoodHygiene.html#overview">Overview</a></li>
+	                        <li><a href="FoodHygiene.html#signs">Symptoms of food poisoning</a></li>
+	                        <li><a href="FoodHygiene.html#preventPoisoning">Preventing food poisoning</a></li>
+	                        <li><a href="FoodHygiene.html#quiz">Quiz</a></li>
+                    	</ul>
+            		</li>
+					<li><a href="AboutUs.html">About Us</a></li>
+				</ul>
+			</div>
 
         <div class="push"></div>
 
     </nav>
     <div class="jumbotron">
         <a href="index.html" class="logo hidden-xs"style="float: left"><img src="images/logo1.png" class="img-responsive" style="margin-right:10px;width:150px;height:150px"/></a>
-        <h3><p style="text-align: center;padding: 20px">This website was created to teach and provide information to teenagers and adults in order to
+        <h3><a name="overview"></a><p style="text-align: center;padding: 20px">This website was created to teach and provide information to teenagers and adults in order to
             minimize the chance of getting ill. The website consists of quizzes at the end of each “course” which leads to the completion of a chosen area of study.</p></h3>
 
     </div>
@@ -61,84 +93,138 @@
         <div class="pane panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a href="#collapseOne" data-toggle="collapse" data-parent="accordion">CPR (Cardiopulmonary Resuscitation) <span class="caret"></span></a>
+                    <a href="#collapseOne" data-toggle="collapse" data-parent="accordion" name="signs">Signs and symptoms of food poisoning<span class="caret"></span></a>
                 </h4>
             </div>
             <div id="collapseOne" class="panel-collapse collapse">
                 <div class="panel-body">
-                    CPR content goes here
+                    Signs and symptoms of food poisoning content goes here
                 </div>
             </div>
         </div>
         <div class="pane panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a href="#collapseTwo" data-toggle="collapse" data-parent="accordion">Allergic <span class="caret"></span></a>
+                    <a href="#collapseTwo" data-toggle="collapse" data-parent="accordion" name="preventPoisoning">Ways to prevent food poisoning<span class="caret"></span></a>
                 </h4>
             </div>
             <div id="collapseTwo" class="panel-collapse collapse">
                 <div class="panel-body">
-                    Allergic content goes here
+                   Ways to prevent food poisoning content goes here
                 </div>
             </div>
         </div>
         <div class="pane panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <a href="#collapseThree" data-toggle="collapse" data-parent="accordion">Brunds and Scalds <span class="caret"></span></a>
-                </h4>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse">
-                <div class="panel-body">
-                    brunds and scalds content goes here
-                </div>
-            </div>
-        </div>
-        <div class="pane panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a href="#collapseFour" data-toggle="collapse" data-parent="accordion">Bleeding <span class="caret"></span></a>
-                </h4>
-            </div>
-            <div id="collapseFour" class="panel-collapse collapse">
-                <div class="panel-body">
-                    Bleeding content goes here
-                </div>
-            </div>
-        </div>
-        <div class="pane panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a href="#collapseFive" data-toggle="collapse" data-parent="accordion">Choking <span class="caret"></span></a>
-                </h4>
-            </div>
-            <div id="collapseFive" class="panel-collapse collapse">
-                <div class="panel-body">
-                    Choking content goes here
-                </div>
-            </div>
-        </div>
-        <div class="pane panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a href="#collapseSix" data-toggle="collapse" data-parent="accordion">Heart Attack <span class="caret"></span></a>
-                </h4>
-            </div>
-            <div id="collapseSix" class="panel-collapse collapse">
-                <div class="panel-body">
-                    Heart attact content goes here
-                </div>
-            </div>
-        </div>
-        <div class="pane panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a href="#collapseSeven" data-toggle="collapse" data-parent="accordion">Quiz <span class="caret"></span></a>
+                    <a href="#collapseSeven" data-toggle="collapse" data-parent="accordion" name="quiz">Quiz <span class="caret"></span></a>
                 </h4>
             </div>
             <div id="collapseSeven" class="panel-collapse collapse">
                 <div class="panel-body">
-                    quiz goes here
+                    <main>
+                        <form class="questionForm" id="q1" data-question="1">
+                            <p>1. What are the sign and symptoms of food poisoning?</p>
+                            <ul>
+                                <li><input type="radio" name="q1" value="a"/>Chills</li>
+                                <li><input type="radio" name="q1" value="b"/>Diarrhoea</li>
+                                <li><input type="radio" name="q1" value="d"/>Feeling sick</li>
+                                <li><input type="radio" name="q1" value="c"/>All of the above</li>
+                            </ul>
+                            <button id="submit">Submit</button>
+                        </form>
+                        <form class="questionForm" id="q2" data-question="2">
+                            <p>2. How long it takes to cure food poisoning?</p>
+                            <ul>
+                                <li><input type="radio" name="q2" value="a"/>Few weeks</li>
+                                <li><input type="radio" name="q2" value="b"/>2 hours</li>
+                                <li><input type="radio" name="q2" value="d"/>Few days</li>
+                                <li><input type="radio" name="q2" value="c"/>9 days</li>
+                            </ul>
+                            <button id="submit">Submit</button>
+                        </form>
+                        <form class="questionForm" id="q3" data-question="3">
+                            <p>3. When should you wash your hands?</p>
+                            <ul>
+                                <li><input type="radio" name="q3" value="a"/>While preparing the food</li>
+                                <li><input type="radio" name="q3" value="d"/>Before and after handling food </li>
+                                <li><input type="radio" name="q3" value="c"/>While eating food</li>
+                                <li><input type="radio" name="q3" value="b"/>None of the above</li>
+                            </ul>
+                            <button id="submit">Submit</button>
+                        </form>
+                        <form class="questionForm" id="q4" data-question="4">
+                            <p>4. Why it is important to wash dishcloths?</p>
+                            <ul>
+                                <li><input type="radio" name="q3" value="c"/>To stop germs breeding</li>
+                                <li><input type="radio" name="q3" value="b"/>So it smells good</li>
+                                <li><input type="radio" name="q3" value="a"/>So it feels softer</li>
+                                <li><input type="radio" name="q3" value="d"/>None of the above</li>
+                            </ul>
+                            <button id="submit">Submit</button>
+                        </form>
+                        <form class="questionForm" id="q5" data-question="5">
+                            <p>5. Why is it important to keep raw meat separate from other foods?</p>
+                            <ul>
+                                <li><input type="radio" name="q3" value="a"/>To stop them breeding</li>
+                                <li><input type="radio" name="q3" value="c"/>So it looks better</li>
+                                <li><input type="radio" name="q3" value="b"/>To reduce the spreading of bacteria </li>
+                                <li><input type="radio" name="q3" value="d"/>None of the above</li>
+                            </ul>
+                            <button id="submit">Submit</button>
+                        </form>
+                        <form class="questionForm" id="q6" data-question="6">
+                            <p>6. On which shelf in the fridge raw food should be stored?</p>
+                            <ul>
+                                <li><input type="radio" name="q3" value="a"/>First (Top shelf)</li>
+                                <li><input type="radio" name="q3" value="b"/>Second</li>
+                                <li><input type="radio" name="q3" value="d"/>Third</li>
+                                <li><input type="radio" name="q3" value="c"/>Last (Bottom shelf)</li>
+                            </ul>
+                            <button id="submit">Submit</button>
+                        </form>
+                        <form class="questionForm" id="q7" data-question="7">
+                            <p>7. What should you do while cooking?</p>
+                            <ul>
+                                <li><input type="radio" name="q3" value="b"/>Make sure there is no pink meatb</li>
+                                <li><input type="radio" name="q3" value="a"/>Wash raw meat eg. Chicken</li>
+                                <li><input type="radio" name="q3" value="c"/>Make sure the water is cold while cooking</li>
+                                <li><input type="radio" name="q3" value="d"/>Wash your hands</li>
+                            </ul>
+                            <button id="submit">Submit</button>
+                        </form>
+                        <form class="questionForm" id="q8" data-question="8">
+                            <p>8. What temperature should your fridge have at all times?</p>
+                            <ul>
+                                <li><input type="radio" name="q3" value="a"/>Above 6C</li>
+                                <li><input type="radio" name="q3" value="b"/>Less than 10C but more than 5C</li>
+                                <li><input type="radio" name="q3" value="c"/>Below 5C </li>
+                                <li><input type="radio" name="q3" value="d"/>Do not need fridge to keep food cold</li>
+                            </ul>
+                            <button id="submit">Submit</button>
+                        </form>
+                        <form class="questionForm" id="q9" data-question="9">
+                            <p>9. Why should you follow ‘use/eat by’ or ‘best before’ dates?</p>
+                            <ul>
+                                <li><input type="radio" name="q3" value="a"/>Because it is good to follow the rules</li>
+                                <li><input type="radio" name="q3" value="b"/>You shouldn’t follow these dates and eat the food anyways</li>
+                                <li><input type="radio" name="q3" value="c"/>Because these dates are scientifically tested</li>
+                                <li><input type="radio" name="q3" value="d"/>All of these statements are incorrect</li>
+                            </ul>
+                            <button id="submit">Submit</button>
+                        </form>
+                        <form class="questionForm" id="q10" data-question="10">
+                            <p>10. What to do if you want to eat your leftovers later?</p>
+                            <ul>
+                                <li><input type="radio" name="q3" value="a"/>Keep it warm until you get hungry</li>
+                                <li><input type="radio" name="q3" value="d"/>Cool it within 90 minutes - correct</li>
+                                <li><input type="radio" name="q3" value="c"/>Never eat leftovers</li>
+                                <li><input type="radio" name="q3" value="b"/>Throw it away</li>
+                            </ul>
+                            <button id="submit">Submit</button>
+                        </form>
+                        <div id="results"></div>
+                    </main>
                 </div>
             </div>
         </div>
