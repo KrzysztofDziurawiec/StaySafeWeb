@@ -1,6 +1,6 @@
 
 body {
-    background-image: url("images/watterWallpeper.jpg");
+    background-image: url("images/greeenWallpeper.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -62,6 +62,10 @@ a.thumbnail:hover
 }
 #accordionHygiene{
 	background:deepskyblue;
+}
+
+#accordionFoodHygiene{
+	background:orange;
 }
 li {
     list-style: none;
