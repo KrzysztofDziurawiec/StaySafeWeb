@@ -42,30 +42,30 @@ a.thumbnail:hover
     opacity: 0.8
 }
 #firstAidTile:hover{
-    border-color: greenyellow;
+    border-color: #8adb97;
 }
 
 #fireSafetyTile:hover{
-    border-color: red;
+    border-color: #e08ba1;
 }
 #hygieneTile:hover{
-    border-color: deepskyblue;
+    border-color: #91aad6;
 }
 #foodHygieneTile:hover {
-    border-color: orange;
+    border-color: #eab069;
 }
 #accordionFirstAid{
-    background: greenyellow;
+    background: #8adb97;
 }
 #accordionFireSafety{
-    background: red;
+    background: #e08ba1;
 }
 #accordionHygiene{
-	background:deepskyblue;
+	background:#91aad6;
 }
 
 #accordionFoodHygiene{
-	background:orange;
+	background:#eab069;
 }
 li {
     list-style: none;
